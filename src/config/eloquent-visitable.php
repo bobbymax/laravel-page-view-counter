@@ -126,6 +126,7 @@ return [
     | Keep it empty, if you don't want to use this feature!
     |
     */
+
     'date-transformers' => [
         // 'past24hours' => Carbon::now()->subDays(1),
         // 'past7days' => Carbon::now()->subWeeks(1),
