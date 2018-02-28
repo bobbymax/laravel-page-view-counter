@@ -86,9 +86,14 @@ class EloquentVisitableServiceProvider extends ServiceProvider
      */
     protected function registerPublishes()
     {
+        // If the application is not running in the console, stop with executing
+        // this method.
+        if (! $this->app->runningInConsole()) {
+            return;
+        }
+
         $config = $this->app->config['eloquent-visitable'];
 
-        // Publish the Eloquent Visitable config file
         $this->publishes([
             __DIR__.'/../config/eloquent-visitable.php' => $this->app->configPath('eloquent-visitable.php'),
         ], 'config');
