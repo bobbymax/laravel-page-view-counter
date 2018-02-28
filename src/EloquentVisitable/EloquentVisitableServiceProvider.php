@@ -93,11 +93,6 @@ class EloquentVisitableServiceProvider extends ServiceProvider
             __DIR__.'/../config/eloquent-visitable.php' => $this->app->configPath('eloquent-visitable.php'),
         ], 'config');
 
-        // Publish the Eloquent Visitable config file
-        $this->publishes([
-            __DIR__.'/../config/eloquent-visitable.php' => $this->app->configPath('eloquent-visitable.php'),
-        ], 'config');
-
         // Publish the `CreateVisitsTable` migration if it doesn't exists
         if (! class_exists('CreateVisitsTable')) {
             $timestamp = date('Y_m_d_His', time());
