@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Helpers;
+namespace CyrildeWit\EloquentViewable\Helpers;
 
 /**
  * This is the serializer helper.

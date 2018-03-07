@@ -11,18 +11,18 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable;
+namespace CyrildeWit\EloquentViewable;
 
 use Illuminate\Support\ServiceProvider;
-use CyrildeWit\EloquentVisitable\Observers\VisitObserver;
-use CyrildeWit\EloquentVisitable\Contracts\Models\Visit as VisitContract;
+use CyrildeWit\EloquentViewable\Observers\VisitObserver;
+use CyrildeWit\EloquentViewable\Contracts\Models\Visit as VisitContract;
 
 /**
  * This is the eloquent visitable service provider class.
  *
  * @author Cyril de Wit <github@cyrildewit.nl>
  */
-class EloquentVisitableServiceProvider extends ServiceProvider
+class EloquentViewableServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.

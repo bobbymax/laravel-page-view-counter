@@ -11,15 +11,15 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Services;
+namespace CyrildeWit\EloquentViewable\Services;
 
 use Request;
 use Carbon\Carbon;
-use CyrildeWit\EloquentVisitable\Jobs\ProcessVisit;
-use CyrildeWit\EloquentVisitable\Helpers\Serializer;
-use CyrildeWit\EloquentVisitable\Helpers\DateTransformer;
-use CyrildeWit\EloquentVisitable\Cache\VisitCounterCacheRepository;
-use CyrildeWit\EloquentVisitable\Contracts\Models\Visit as VisitContract;
+use CyrildeWit\EloquentViewable\Jobs\ProcessVisit;
+use CyrildeWit\EloquentViewable\Helpers\Serializer;
+use CyrildeWit\EloquentViewable\Helpers\DateTransformer;
+use CyrildeWit\EloquentViewable\Cache\VisitCounterCacheRepository;
+use CyrildeWit\EloquentViewable\Contracts\Models\Visit as VisitContract;
 
 /**
  * This is the visit service manager.
@@ -31,21 +31,21 @@ class VisitService
     /**
      * Visit counter cache repository instance.
      *
-     * @var \CyrildeWit\EloquentVisitable\Cache\VisitCounterCacheRepository
+     * @var \CyrildeWit\EloquentViewable\Cache\VisitCounterCacheRepository
      */
     protected $visitCounterCacheRepository;
 
     /**
      * Date transformer helper instance.
      *
-     * @var CyrildeWit\EloquentVisitable\Helpers\DateTransformer;
+     * @var CyrildeWit\EloquentViewable\Helpers\DateTransformer;
      */
     protected $dateTransformer;
 
     /**
      * Serializer instance.
      *
-     * @var \CyrildeWit\EloquentVisitable\Helpers\Serializer
+     * @var \CyrildeWit\EloquentViewable\Helpers\Serializer
      */
     protected $serializer;
 

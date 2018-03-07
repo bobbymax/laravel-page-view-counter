@@ -11,10 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Traits;
+namespace CyrildeWit\EloquentViewable\Traits;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use CyrildeWit\EloquentVisitable\Services\VisitService;
+use CyrildeWit\EloquentViewable\Services\VisitService;
 
 /**
  * Make your Eloquent models visitable with this trait.

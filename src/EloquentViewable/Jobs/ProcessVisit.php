@@ -11,14 +11,14 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Jobs;
+namespace CyrildeWit\EloquentViewable\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use CyrildeWit\EloquentVisitable\Models\Visit;
+use CyrildeWit\EloquentViewable\Models\Visit;
 
 /**
  * This is the store visit job.
@@ -34,7 +34,7 @@ class ProcessVisit implements ShouldQueue
     /**
      * Create a new job instance.
      *
-     * @param  \CyrildeWit\EloquentVisitable\Models\Visit  $visit
+     * @param  \CyrildeWit\EloquentViewable\Models\Visit  $visit
      * @return void
      */
     public function __construct(Visit $visit)

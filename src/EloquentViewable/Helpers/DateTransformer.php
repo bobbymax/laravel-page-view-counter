@@ -11,10 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Helpers;
+namespace CyrildeWit\EloquentViewable\Helpers;
 
 use Carbon\Carbon;
-use CyrildeWit\EloquentVisitable\Exceptions\DateTransformerDoesNotExists;
+use CyrildeWit\EloquentViewable\Exceptions\DateTransformerDoesNotExists;
 
 /**
  * This is the date transformer service.

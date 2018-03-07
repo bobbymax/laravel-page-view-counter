@@ -11,11 +11,11 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Models;
+namespace CyrildeWit\EloquentViewable\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use CyrildeWit\EloquentVisitable\Contracts\Models\Visit as VisitContract;
+use CyrildeWit\EloquentViewable\Contracts\Models\Visit as VisitContract;
 
 /**
  * This is the Eloquent model Visit class.

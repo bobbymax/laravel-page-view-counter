@@ -11,11 +11,11 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Observers;
+namespace CyrildeWit\EloquentViewable\Observers;
 
 use Event;
-use CyrildeWit\EloquentVisitable\Models\Visit;
-use CyrildeWit\EloquentVisitable\Events\VisitableWasVisited;
+use CyrildeWit\EloquentViewable\Models\Visit;
+use CyrildeWit\EloquentViewable\Events\VisitableWasVisited;
 
 /**
  * Class VisitObserver.
@@ -27,7 +27,7 @@ class VisitObserver
     /**
      * Listen to the Visit created event.
      *
-     * @param  \CyrildeWit\EloquentVisitable\Models\Visit  $user
+     * @param  \CyrildeWit\EloquentViewable\Models\Visit  $user
      * @return void
      */
     public function created(Visit $visit)

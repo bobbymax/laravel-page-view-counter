@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace CyrildeWit\EloquentVisitable\Contracts\Models;
+namespace CyrildeWit\EloquentViewable\Contracts\Models;
 
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
