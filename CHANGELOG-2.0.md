@@ -1,4 +1,4 @@
-# Release Notes for 2.x
+# Release Notes for 2.0
 
 All notable changes to `v2.x.x` will be documented in this file.
 
